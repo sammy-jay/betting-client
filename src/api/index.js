@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = axios.create({baseURL: 'https://clever-sprinkles-15e236.netlify.app/api/v1', headers:{
+const API = axios.create({baseURL: 'https://larva-betting-server.herokuapp.com/api/v1', headers:{
     'Access-Control-Allow-Origin': "*"
 }})
 
