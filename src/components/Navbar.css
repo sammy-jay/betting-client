@@ -1,0 +1,37 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #000;
+    align-items: center;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar li{
+    display: inline;
+    margin: 0 0.75rem;
+}
+.navbar h2{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.logoutBtn{
+     margin: 0 0.75rem;
+     font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}

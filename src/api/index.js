@@ -1,0 +1,14 @@
+import axios from "axios";
+const API = axios.create({baseURL: 'https://clever-sprinkles-15e236.netlify.app/api/v1', headers:{
+    'Access-Control-Allow-Origin': "*"
+}})
+
+
+API.interceptors.request.use((req) => {
+        req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('profile'))?.token}`
+        return req
+    })
+
+
+export const signIn = (credentials) => API.post('/auth/signin', credentials)
+export const signUp = (credentials) => API.post('/auth/signup', credentials)
